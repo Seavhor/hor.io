@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-image: url('https://images6.alphacoders.com/452/452298.jpg');
+            object-fit: cover;
+            background-size: cover;
+            color: rgb(238, 234, 242);
+            height: 150px;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            align-items: center;
+            color: rgb(86, 65, 65);
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        main{
+            background-image: url('https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches-vector_53876-143109.jpg?semt=ais_hybrid&w=740');
+        
+            background-size: cover;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 440px);
+            gap: 5px;
+            justify-content: center;
+            padding-top: 9px;
+            
+        }
+        .HOTCOFFEE{
+            padding-left: 10px;
+            height: 350px;
+            background-color: rgb(37, 32, 25);
+            border-radius: 10px; 
+            
+        }
+        .HOTCOFFEE p{
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            margin: 0;
+            
+        }
+        .HOTCOFFEE img{
+            width: 95%;
+            height: 85%;
+            object-fit: cover;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: all 0.5s;
+            margin-top: 7px;
+        }
+        .HOTCOFFEE:hover img{
+            transform: scale(1.03);
+        }
+
+        .ICEDCOFFEE{
+            padding-left: 10px;
+            height: 350px;
+            background-color: rgb(37, 32, 25);
+            border-radius: 10px;
+            
+        }
+        .ICEDCOFFEE p{
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            margin: 0;
+        }
+        .ICEDCOFFEE img{
+            width: 95%;
+            height: 85%;
+            object-fit: cover;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: all 0.5s;
+            margin-top: 7px;
+        }
+        .ICEDCOFFEE:hover img{
+            transform: scale(1.03);
+        }
+        .BREAD{
+            padding-left: 10px;
+            height: 350px;
+            background-color: rgb(37, 32, 25);
+            border-radius: 10px;
+        }
+        .BREAD p{
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+            font-family: arial;
+            margin: 0;
+        }
+        .BREAD img{
+            width: 95%;
+            height: 85%;
+            object-fit: cover;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: all 0.5s;
+            margin-top: 7px;
+        }
+        .BREAD:hover img{
+            transform: scale(1.03);}
+        @media (max-width: 1024px) {
+            .container{
+                grid-template-columns: repeat(2, 360px);}
+            .nav{
+                font-size: 25px;
+            }
+            header h1{
+                font-size: 30px;
+            }
+        }
+        @media (max-width: 640px) {
+            .container{
+            
+                grid-template-columns: repeat(1, 300px);
+                justify-content: center;
+            }
+            .nav{
+                font-size: 15px;
+            }
+            header h1{
+                font-size: 18px;
+            }
+        }
+        .contact_us{
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+        .form{
+            width: 300px;
+            height: 270px;
+            border: 1px solid;
+            display:flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 30px;
+            border: 2px solid rgb(223, 217, 217);
+            border-radius: 10px;
+            margin-top: -150px;
+            background-color: azure;
+        }
+        .form input{
+            border-radius: 5px;
+            border: 2px solid gray;
+            width: 240px;
+            height: 30px;
+        }
+        .form button{
+            background-color: rgb(20, 173, 20);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>bakery and Café</h1>
+        <div class="nav">
+            <a href=""></a><nav>Home</nav>
+            <nav>Manue</nav>
+            <nav>Contact</nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="HOTCOFFEE">
+                <p>HOT COFFEE</p>
+                <a href="b.html"><img src="https://www.bbassets.com/media/uploads/p/l/40233401_1-fresho-fresh-hot-coffee.jpg" alt=""></a>
+            </div>
+            <div class="ICEDCOFFEE">
+                <p>ICED COFFEE</p>
+                <a href="g.html"><img src="https://img.freepik.com/premium-photo/iced-coffee-delight-chilled-beans-serene-brown-background_1000124-126743.jpg" alt=""></a>
+            </div>
+            <div class="BREAD">
+                <p>BREAD</p>
+                <a href="f.html"><img src="https://www.youkneadsourdough.com.au/cdn/shop/articles/Blog_7._Feature_Image.jpg?v=1626310907" alt=""></a>
+            </div>
+        </div>
+       <div class="contact_us">
+            <div class="form">
+                <h2>Contact us</h2>
+                <label for="">Name:</label>
+                <Input></Input><br>
+                <label for="">Email:</label>
+                <Input></Input><br>
+                <button>Submit</button>
+            </div>
+
+     </div>
+    </main>
+ 
+</body>
+</html>
